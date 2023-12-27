@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+	--foreground-rgb: 0, 0, 0;
+	--background-start-rgb: 214, 219, 220;
+	--background-end-rgb: 255, 255, 255;
+
+	--red: #b61c1c;
+	--dark-red: #7c1313;
+	--white: #ececec;
+	--very-light-purple: #d9c8ff;
+	--light-purple: #c293ff;
+	--purple: #7953cb;
+	--dark-purple: #573b93;
+	--very-dark-purple: #291d47;
+	--very-very-dark-purple: #1e1437;
+	--blue: #149cc7;
+	--green: #33a81f;
+}
+
+body {
+	color: rgb(var(--foreground-rgb));
+	background: white;
+}
