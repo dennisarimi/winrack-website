@@ -25,14 +25,13 @@
 }
 
 .position {
-    font-size: 0.65em;
-    color: var(--grey);    
+    font-size: 0.65em;    
     padding-top: 10px;
 }
 
 .description {
     font-size: 0.65em;
-    color: var(--light-grey);   
+    color: var(--grey);   
     padding-top: 10px;
 }
 
