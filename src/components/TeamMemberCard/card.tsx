@@ -30,11 +30,6 @@ const TeamMemberCard = (props: IProps) => {
             <p className={ styles.description }>{ description }</p>
             { socialMedia && (
                 <div className={styles.socialMedia}>
-                    {socialMedia.facebook && (
-                        <a href={socialMedia.facebook} target="_blank" rel="noopener noreferrer">
-                            <FontAwesomeIcon icon={ faFacebook } style={{ "color": "var(--facebookBlue)" }}/>
-                        </a>
-                    )}
                     {socialMedia.twitter && (
                         <a href={socialMedia.twitter} target="_blank" rel="noopener noreferrer">
                             <FontAwesomeIcon icon={ faXTwitter } className={ styles.icon }/>
