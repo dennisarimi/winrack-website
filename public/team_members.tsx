@@ -20,8 +20,8 @@ export const teamMembers = [
           },
     },
     {
-        image: 'team_images/dr_charles_wambu.jpg',
-        name: 'Dr David Obonyo',
+        image: 'team_images/mr_david_obonyo.png',
+        name: 'Mr David Obonyo',
         position: 'Decision Maker, Co-Principal Investigator (Co-PI)',
         description: 'Mr. David Obonyo has been the Commissioner for Cooperatives in Kenya since 2021. Mr. Obonyo is a career civil servant and has served in cooperative administration since 1990, focusing mainly on cooperative development. He holds a Master\'s Degree in Arts, Rural Economics and Co-Operation, and has attended various local and international courses on strategic leadership.',
         socialMedia: {

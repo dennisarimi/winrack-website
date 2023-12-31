@@ -1,8 +1,7 @@
 import React from 'react'
 import styles from './styles.module.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-// import { faFacebook, faTwitter, faLinkedin } from '@fortawesome/free-solid-svg-icons';
-import { faFacebook, faXTwitter, faLinkedin } from '@fortawesome/free-brands-svg-icons';
+import { faXTwitter, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 
 
 
@@ -12,10 +11,8 @@ interface IProps {
     description: string;
     image: string;
     socialMedia?: {
-        facebook?: string;
         twitter?: string;
         linkedin?: string;
-        // Add more social media as needed
     };
 }
 
