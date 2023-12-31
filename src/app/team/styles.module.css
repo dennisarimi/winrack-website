@@ -2,3 +2,24 @@
 	max-width: var(--max-width);
 	min-height: 100vh;
 }
+
+.teamMembersContainer {
+	margin-left: 50px;
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+	gap: 10px;
+}
+  
+@media screen and (max-width: 768px) {
+	.teamMembersContainer {
+		grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+	}
+}
+  
+@media screen and (max-width: 480px) {
+	.teamMembersContainer {
+		margin-left: 90px;
+		width: 250px;
+		grid-template-columns: 1fr;
+	}
+}
