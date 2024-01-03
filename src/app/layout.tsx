@@ -2,6 +2,7 @@ import { Inter } from 'next/font/google';
 import '../styles/globals.css';
 import Navbar from '@/components/Navbar/navbar';
 import Footer from '@/components/Footer/footer';
+import '@fortawesome/fontawesome-svg-core/styles.css'
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -16,7 +17,19 @@ export default function RootLayout({ children }) {
 			<body className={inter.className}>
 				<Navbar />
 				{children}
-				<Footer />
+				<Footer
+					socialMedia={{
+						instagram: 'https://www.instagram.com/win_rack/',
+						twitter: '',
+						linkedin: 'https://www.linkedin.com/company/winrack/'
+					}} 
+					
+					collaboratorLinks={{
+						cuk: 'https://www.cuk.ac.ke/',
+						ufv: 'https://www.ufv.ca/',
+						sdoc: 'https://ushirika.go.ke/state-department-for-co-operatives/'
+					}}				
+				/>
 			</body>
 		</html>
 	);
