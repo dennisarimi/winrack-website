@@ -1,21 +1,32 @@
+.nav_box {
+  height:76px;
+  align-self:flex-start;
+  z-index: 2;
+  text-align: center;
+}
+
 .navbar {
-	width: 100%;
-	background-color: var(--green);
-	text-align: center;
+	position:fixed;
+  width: 100%;
+  background-color: var(--green);
+  text-align: center;
 }
 
 .links {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	max-width: var(--max-width);
-	margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: var(--max-width);
+  margin: auto;
 }
 
 .link {
-	color: var(--white);
+  color: var(--white);
 }
 
 .link:hover {
-	color: var(--yellow);
+  color: var(--yellow);
+  text-decoration-line: underline;
+  text-decoration-color: #F8C739;
+  text-decoration-thickness: 3px;
 }
