@@ -1,0 +1,77 @@
+.card {
+    background-color: white;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    border-radius: 10px;
+    /* gap: 1px; */
+    /* border: 10px solid var(--yellow); */
+    box-shadow: 2px 3px 5px var(--light-grey);
+    /* justify-content: space-between; */
+    /* align-items: flex-end; */
+    /* z-index: 10; */
+}
+
+.cardSection1 {
+    /* background-color: red; */
+    /* flex-grow: 1; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+}
+
+.cardSection2 {
+    /* background-color: red; */
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 10px
+}
+
+.cardSection3 {
+    /* background-color: red; */
+    /* flex-grow: 1; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+}
+
+.itemType {
+    background-color: #00AABA;
+    border-radius: 30px;
+    width: 125px;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.itemType p {
+    color: white;
+    font-weight: 500;
+    font-size: large;
+}
+
+.cardSection2 h2 {
+    font-weight: 500;
+    font-size: large;
+}
+
+.cardSection2 p {
+    font-size:smaller;
+    color: var(--grey);
+}
+
+.icon {
+    font-size: medium;
+}
+
+.icon:hover {
+    transition: transform 0.3s ease-out;
+    transform: scale(1.4);
+}

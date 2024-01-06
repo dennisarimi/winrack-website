@@ -1,0 +1,21 @@
+.navbar {
+	width: 100%;
+	background-color: var(--green);
+	text-align: center;
+}
+
+.links {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	max-width: var(--max-width);
+	margin: auto;
+}
+
+.link {
+	color: var(--white);
+}
+
+.link:hover {
+	color: var(--yellow);
+}
