@@ -2,7 +2,6 @@ import { Inter } from 'next/font/google';
 import '../styles/globals.css';
 import Navbar from '@/components/Navbar/navbar';
 import Footer from '@/components/Footer/footer';
-import '@fortawesome/fontawesome-svg-core/styles.css'
 
 const inter = Inter({ subsets: ['latin'] });
 
