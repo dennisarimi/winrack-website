@@ -2,6 +2,8 @@ import Image from 'next/image';
 import styles from './styles.module.css';
 import IconCard from '@/components/IconCard/card';
 import LogoCard from '@/components/LogoCard/card';
+import Timeline from '@/components/Timeline/timeline';
+import LeafItem from '@/components/LeafItem/item';
 
 export default function Home() {
 	return (
@@ -76,11 +78,52 @@ export default function Home() {
 				</ul>
 			</section>
 
-			<section className={styles.timeline}>*Timeline*</section>
+			<section className={styles.timeline}>
+				<Timeline />
+			</section>
 
 			<section className={styles.theory}>
 				<h2>Theory of Change</h2>
-				<Image src={''} width={15} height={15} alt='' />
+				<div className={styles.container}>
+					<div className={styles.interventions}>
+						<h3 className={styles.title}>Interventions</h3>
+						<div className={styles.content}>
+							<h4>HOUSEHOLDS</h4>
+							<p>
+								Participatory gender transformative approaches in:
+								<ul>
+									<li>Gender power relations</li>
+									<li>Women{`'`}s agency</li>
+									<li>Gender roles and agricultural activities</li>
+									<li>Intersectionality</li>
+								</ul>
+							</p>
+						</div>
+						<div className={styles.content}>
+							<h4>AGRICULTURAL COOPERATIVES LEVELS</h4>
+							<ul>
+								<li>Strengthening internal governance system</li>
+								<li>Strengthening of operational systemss</li>
+								<li>Internal control and risk management systems</li>
+								<li>Capacity building on human-centered design health finance design</li>
+							</ul>
+						</div>
+					</div>
+					<div className={styles.outcomes}>
+						<h3 className={styles.title}>Outcomes</h3>
+						<LeafItem
+							text='Increased participation of women in agricultural coorperatives enhanced access to healthcare
+								financing'
+						/>
+						<LeafItem text='Vibrant, inclusive and sustainable agricultural cooperatives' />
+						<LeafItem text='Elimination of barriers to women participation in agricultural cooperatives' />
+					</div>
+					<div className={styles.impact}>
+						<h3 className={styles.title}>Impact</h3>
+						<p>Inclusive, sustainable and health agricultural cooperatives</p>
+						<span className={styles.image} />
+					</div>
+				</div>
 			</section>
 
 			<section className={styles.results}>

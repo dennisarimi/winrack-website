@@ -195,9 +195,128 @@ section.objectives ul li {
 	}
 }
 
-section.results {
+section.theory {
 	display: flex;
 	flex-direction: column;
+}
+
+section.theory .container {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	border-radius: 20px;
+	overflow: hidden;
+}
+
+@media screen and (max-width: 768px) {
+	section.theory .container {
+		grid-template-columns: 1fr;
+	}
+}
+
+section.theory .title {
+	text-align: center;
+	font-size: 24px;
+	font-weight: 400;
+	letter-spacing: 1px;
+	color: white;
+	margin: auto;
+	margin-bottom: 20px;
+	margin-top: 20px;
+}
+
+@media screen and (max-width: 768px) {
+	section.theory .title {
+		margin-left: 0;
+		text-align: left;
+	}
+}
+
+section.theory .interventions {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: space-between;
+	background-color: var(--blue);
+	padding: 20px;
+}
+
+section.theory .interventions .content {
+	margin-bottom: 10px;
+	text-align: left;
+}
+
+section.theory .interventions .content h4 {
+	color: var(--yellow);
+	font-size: 16px;
+	font-weight: 300;
+	letter-spacing: 1px;
+}
+
+section.theory .interventions .content p,
+section.theory .interventions ul {
+	text-align: left;
+	color: var(--very-light-grey);
+	font-size: 15px;
+	font-weight: 300;
+	margin: 10px;
+	list-style-type: disc;
+	list-style-position: inside;
+}
+
+section.theory .outcomes {
+	background-color: var(--light-blue);
+	padding: 20px;
+}
+
+section.theory .impact {
+	position: relative;
+	background-color: var(--dark-blue);
+	padding: 20px;
+}
+@media screen and (max-width: 768px) {
+	section.theory .impact {
+		min-height: 200px;
+		padding-bottom: 60px;
+	}
+}
+
+section.theory .impact .image {
+	width: 100%;
+	height: 200px;
+	display: block;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	z-index: 3;
+	background-image: url('/site_images/women.png');
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: bottom right;
+}
+
+@media screen and (max-width: 768px) {
+	section.theory .impact .image {
+		height: 130px;
+	}
+}
+
+@media screen and (max-width: 500px) {
+	section.theory .impact .image {
+		height: 100px;
+	}
+}
+
+section.theory .impact p {
+	color: var(--very-light-grey);
+	font-size: 15px;
+	max-width: 200px;
+}
+
+@media screen and (max-width: 768px) {
+	section.theory .impact p {
+		text-align: left;
+		margin-left: 0;
+	}
 }
 
 section.results .container {
