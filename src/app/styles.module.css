@@ -46,7 +46,7 @@ section.partners {
 
 section.landing {
 	position: relative;
-	height: calc(100vh - 45px); /* minus the height of the navbar */
+	height: calc(100vh - 76px); /* minus the height of the navbar */
 	background-color: var(--green);
 	max-width: none;
 	width: 100%;
@@ -79,6 +79,7 @@ section.landing .leaf {
 	right: 0;
 	bottom: 0;
 	transform: translate(0, 50%);
+	z-index: 3; /* leaf overlays navbar on scroll */
 }
 
 @media screen and (max-width: 600px) {
@@ -103,7 +104,7 @@ section.landing .line {
 	background-color: white;
 	display: block;
 	position: absolute;
-	z-index: 10;
+	z-index: 1;
 	bottom: 0;
 }
 
