@@ -1,0 +1,31 @@
+.item {
+	position: relative;
+}
+
+.item p {
+	position: relative;
+	left: 10px;
+	text-align: left;
+	color: var(--very-light-grey);
+	font-size: 15px;
+	font-weight: 300;
+	margin: 20px;
+	padding: 10px;
+}
+
+.item .leaf_1 img {
+	-webkit-transform: rotate(180deg);
+	-moz-transform: rotate(180deg);
+	-ms-transform: rotate(180deg);
+	-o-transform: rotate(180deg);
+	transform: rotate(180deg);
+	position: absolute;
+	top: 10px;
+	left: 0;
+}
+
+.item .leaf_2 {
+	position: absolute;
+	bottom: 8px;
+	right: 15px;
+}
