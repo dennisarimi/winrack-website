@@ -75,3 +75,16 @@
     transition: transform 0.3s ease-out;
     transform: scale(1.4);
 }
+
+.titleDate {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding-right: 30px;
+}
+
+.titleDate h2+h2 {
+    font-size: 13px;
+    font-weight:normal;
+    color: var(--grey);
+}
